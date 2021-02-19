@@ -1,0 +1,118 @@
+/**********
+all tabs
+**********/
+body {
+  	background-color: #eafaf1;
+}
+h2 {
+  text-align: center;
+}
+img {
+border-radius: 8%;
+}
+
+/**********
+home tab
+**********/
+#DivIdRef {
+	text-align: center;
+	border: 5px outset #0d552c;
+}
+#IdRef {
+	font-size:100%;
+	font-weight: bold;
+}
+
+/**********
+signup tab
+**********/
+.ClassSignupText {
+	font-size:100%;
+	font-weight: bold;
+	text-align: center;
+}
+.ClassSignupText2 {
+	font-size:100%;
+	text-align: center;
+}
+.ClickInstructions {
+	color: #f6762c;
+	font-size:100%;
+}
+aside {
+	float: right;
+	background-color: #d6dbdf;
+	width: 30%;
+/*padding, font also touches pic2 dropdown*/ 
+	padding-left: 1%;
+	font-style: italic;
+}
+aside > p {
+    margin: .5rem;
+}
+
+/**********
+stories tab
+**********/
+ table{
+	font-family: calibri;
+	text-align: center;
+ }
+th{
+ background: linear-gradient(#708a3a, #a2c754); /*YUCK Change */
+}
+th:first-child{
+	border-radius: 8px 0 0 0;
+}
+th:last-child{
+	border-radius: 0 8px 0 0;
+}
+td:first-child, th:first-child {
+    text-align: left;
+	width: 55%;
+}
+td{	
+	font-size: 90%;
+    background-color: #c6e8b7;
+}
+td:hover,tr:hover {
+    opacity: 1;
+	text-shadow: 1px 1px 1px #7d0af0,
+                 3px 3px 5px #c9780e;
+}
+tr{
+	opacity: 0.7;
+}
+
+/**********
+pics D-F dropdown
+**********/
+.left{
+	background-color: #b8e3cb;
+	width: 115px;
+	text-align: center;
+	margin-right: 1%;
+	float: left;	
+	height: 100vh;
+}
+.NoBullets {
+	list-style: none;
+	padding: .1%;
+}
+.right{
+	padding: .1%;
+}
+
+
+/*footer
+.primary-footer {
+  color: #648880;
+  font-size: 14px;
+  padding-bottom: 44px;
+  padding-top: 44px;
+}
+.primary-footer small {
+  float: left;
+  font-weight: 400;
+}
+*/

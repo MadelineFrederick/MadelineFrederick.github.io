@@ -1,0 +1,16 @@
+/*wide screen green, to blue, to lavendar, to peach*/
+@media only screen and (max-width: 1000px) {
+  body {
+    background-color: #ebf2f7;
+  }
+  
+@media only screen and (max-width: 800px) {
+  body {
+    background-color: #f7f2fa;
+  }
+ 
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: #fcf3e8;
+  }
+  

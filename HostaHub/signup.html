@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>signup</title>
+	<link rel="stylesheet" href="css/hostaHub.css">
+	<link rel="stylesheet" href="css/topNavBar.css">
+	<link rel="icon" type="img/png" href="imgs/iconFlowerLiberty.png"/>
+	<script src = "js/hostaHub.js"></script>
+</head>
+<body>
+	<div class="nav">
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="signup.html" >Sign Up</a></li>
+			<li><a href="stories.html">Stories</a></li>
+			<li><a href="#">Pictures</a>
+				<ul>
+					<li><a href="pics1.html">A-B</a></li>
+					<li><a href="pics2.html">C-E</a></li>
+					<li><a href="pics3.html">F-G</a></li>
+					<li><a href="pics4.html">H-K</a></li>
+					<li><a href="pics5.html">L-P</a></li>
+					<li><a href="pics6.html">Q-S</a></li>
+					<li><a href="pics7.html">T-Z</a></li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+
+<h2>Hosta Hub Group</h2>
+	<p class="ClassSignupText">Please signup for the group where we learn and share about hostas</p>
+	
+	<p class="ClassSignupText2">Your login and password will take you to another page where you can discuss ideas and questions with others that have also signed up</p>
+
+<aside>
+<p>Today this is only a practice form page. Also, we are not yet hooked up to a database. This means when you close your browser all is gone.</p>
+</aside>
+
+<form action="joinGroupClickMe.html" onclick="return validateForm()">
+	Your Name <input type="text" name="fname" required><br><br>
+	Your State or Country <input type="text" id="country" onblur="cFunc()"required><br><br>  
+	Email address <input type="email" name="email" required><br><br>
+	Today's Date <input type="date" name="ldate" required><br><br>
+	Years Growing Hosta <input type="number" size="6" name="years" min="1" max="60" value="1"><br><br>
+	
+	Your Favorite Hosta Site <input type="url" name="url" id="url" placeholder="http://google.com" required pattern="https?://.+"><br><br>
+			 
+	Enter Password <input id="password1" name="password" type="password" pattern="^\S{6,}$" onchange="this.setCustomValidity(this.validity.patternMismatch ? 'Must have at least 6 characters' : ''); if(this.checkValidity()) form.password_two.pattern = this.value;" placeholder="Password" required><br><br>
+	Confirm Password <input id="password2" name="password_two" type="password" pattern="^\S{6,}$" onchange="this.setCustomValidity(this.validity.patternMismatch ? 'Please enter the same Password as above' : '');" placeholder="Verify Password" required><br><br>
+
+	<p class="ClickInstructions"><i>Using a "Click Me" vs a "Submit" button while I work on this page...</i></p>
+    <button onclick="clickFunc();">Click Me</button>
+</form><br>
+
+<script type="text/javascript">
+function clickFunc()	{	
+	alert ("Thank you! \n " + "If you have filled out this form correctly you will go to the next page when you click OK.");
+}	
+
+function cFunc() {
+  var x = document.getElementById("country");
+  x.value = x.value.toUpperCase();
+}
+
+function validateForm()
+{	
+var input = document.getElementById("url");
+input.oninvalid = function(event) {
+    event.target.setCustomValidity("example http://google.com");
+	}
+}
+</script>
+
+</body>
+</html>
+
+<!-- 
+-->	

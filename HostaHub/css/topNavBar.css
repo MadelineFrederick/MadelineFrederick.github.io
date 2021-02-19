@@ -1,0 +1,83 @@
+/*******************************************
+   Style menu for skinny screens
+   not needed w/ hosta hub
+   just checking out move from vertical to horizontal
+********************************************/
+@media only screen and (max-width: 500px) {
+.nav ul {
+  list-style: none;
+  background-color: #6bbb8f;
+  padding-left: 15px;
+  margin: 0;
+}
+.nav a {
+  text-decoration: none;
+  color: #fff;
+  display: block;
+  transition: .3s background-color;
+font-size: 1.5em;
+}
+.nav a:hover {
+  background-color: #005f5f;
+  color: #ffff00;	
+}
+.nav li li {
+  font-size: .8em;
+}
+.nav li ul li {
+   display: block;
+ }
+}
+/*******************************************
+   Style menu for wider screens
+********************************************/
+ @media screen and (min-width: 500px) {
+.nav ul {
+  list-style: none;
+  background-color: #6bbb8f;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+.nav li {
+    width: 20%;
+    border-right: 3px solid #ffff00;
+    height: 50px;
+    line-height: 50px;
+    font-size: 140%;
+    display: inline-block;
+    margin-right: -4px;
+  }
+.nav a {
+  text-decoration: none;
+  color: #fff;
+  display: block;
+  transition: .3s background-color;
+}
+.nav a:hover {
+  background-color: #005f5f;
+  color: #ffff00;
+}
+
+/* nav bar only*/
+.nav li:last-child{
+  border-right: none;
+}
+
+/* dropdown menus */
+.nav li li {
+  font-size: .8em;
+  border-right: none;
+}
+.nav li ul {
+    position: absolute;
+	display: none; /*hide until hover*/
+}
+.nav li:hover ul {
+  display: block;
+   width: inherit;
+}
+.nav li ul li {
+   display: block; /*else 4 across, not good mobile*/
+ }
+}
