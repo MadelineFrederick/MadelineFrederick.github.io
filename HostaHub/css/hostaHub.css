@@ -22,6 +22,11 @@ home tab
 	font-size:100%;
 	font-weight: bold;
 }
+summary {
+  font-weight: bold;
+  color: #6d308a;
+  margin-left: 2%;
+}
 
 /**********
 signup tab
